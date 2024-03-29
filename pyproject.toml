@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "discordbot"
+version = "0.1.0"
+description = "My personal discord bot for my discord server"
+authors = ["vadim.bielievtsov <vadim.belov36@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.110.0"
+pytube = "^15.0.0"
+pytest = "^8.1.1"
+pydantic-settings = "^2.2.1"
+redis = "^5.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "services"

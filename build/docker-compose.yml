@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - "${redis_port:-6379}:6379"
+    environment:
+      - REDIS_PASSWORD="${redis-pass:-password}"
+      - REDIS_PORT=6379
